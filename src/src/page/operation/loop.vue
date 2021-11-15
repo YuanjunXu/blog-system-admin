@@ -183,7 +183,7 @@
                     this.$message.error('跳转链接不可以为空.');
                     return;
                 }
-                if (!this.loop.targetUrl.startsWith('http:///') &&
+                if (!this.loop.targetUrl.startsWith('http://') &&
                     !this.loop.targetUrl.startsWith('https://')) {
                     this.$message.error('目标链接格式错误.');
                     return;
