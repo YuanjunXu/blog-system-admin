@@ -1,6 +1,6 @@
-const baseUrl = 'http://localhost:2020';
+const baseUrl = 'http://localhost:2021';
 const imageBaseUrl =  '/portal/image/';
-const portalBaseUrl = 'http://www.coincent.cn';
+const portalBaseUrl = 'http://www.yuanjun.cn';
 export default {
     portalBaseUrl,
     baseUrl,

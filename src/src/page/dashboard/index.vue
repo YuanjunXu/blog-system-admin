@@ -1,7 +1,7 @@
 <template>
     <div class="dashboard-box">
         <div class="welcome-tps">
-            欢迎使用阳光沙滩博客系统！
+            欢迎来到猿村管理中心！
         </div>
         <div class="web-size-info-box margin-bottom-20">
             <el-row :gutter="20">

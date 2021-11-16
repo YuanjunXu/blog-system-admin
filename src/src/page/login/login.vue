@@ -23,7 +23,7 @@
                             <el-form-item label="密码" required>
                                 <el-input type="password" v-model="originalPassword" placeholder="请输入密码"></el-input>
                             </el-form-item>
-                            <el-form-item label="人类验证码" required>
+                            <el-form-item label="图灵验证码" required>
                                 <el-input v-model="loginInfo.verifyCode" placeholder="请输入右侧验证码"
                                           @keyup.enter.native="doLogin"></el-input>
                                 <img :src="captchaPath" @click="updateVerifyCode" class="captcha-code">
@@ -80,7 +80,7 @@
                 }
 
                 if (this.loginInfo.verifyCode === '') {
-                    this.toastE('人类验证码不可以为空.');
+                    this.toastE('图灵验证码不可以为空.');
                     return;
                 }
                 this.sobUser.password = hex_md5(this.originalPassword);
@@ -97,7 +97,7 @@
                         //如果是成功
                         this.$router.push({path: '/index'})
                     } else {
-                        //更新一下人类验证码
+                        //更新一下图灵验证码
                         this.updateVerifyCode();
                         this.toastE(result.message);
                     }
