@@ -45,7 +45,7 @@ router.beforeEach((to, from, next) => {
                 if (result.data.roles === 'role_admin') {
                     next();
                 } else {
-                    location.href = this.blog_constant.portalBaseUrl;
+                    location.href = constants.portalBaseUrl;
                 }
             } else {
                 //跳转到登录界面
